@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Highcharts</title>
+		<script src="jquery.js"></script>
+		<script src="highcharts.js"></script>
+		<script src="exporting.js"></script>
+</head>
+<body>
+	<div id="container" style="width: 100%; height: 400px"></div>	
+<script>
+	$(document).ready(function(){
+		var options ={
+			chart: {
+				renderTo: 'container',
+				type: 'pie'
+			},
+			series: [{}]
+		};
+		$.getJSON('data1.php', function(data){
+			options.series[0].data = data;
+			var chart = new Highcharts.Chart(options);
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.content {
+			margin-top: 10px;
+		}
+.form-group {
+ margin-bottom: 15px;
+}
+.form-group a{
+ font-weight:bold;
+ }
+.form-group a:hover{
+ text-transform:none;
+ text-decoration:none;
+ }
+.form-group .left {
+ float: left;
+}
+.form-group .right {
+ float: right;
+}
+#navbarright { text-align:right; margin-top:4px;}
+#navbar{ width:100%; background:none; color:#fff;  position:absolute; clear:both; top:4px;}
+.dropDownMenu,
+.dropDownMenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.dropDownMenu li {
+	position: relative; 
+ 
+	 
+}
+.dropDownMenu a {
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+	color:#d6d6d6;
+}
+.dropDownMenu a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+
+/* Level 1 Drop Down Menu */
+.dropDownMenu > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px; /* solve the 4 pixels spacing between list-items */
+}
+.dropDownMenu > li:first-child {
+	margin-left: 0;
+}
+.dropDownMenu > li > a {}
+.dropDownMenu > li > a:hover {  background-color:#35537F; }
+/* Level 2 */
+.dropDownMenu > li > ul {
+	text-align: left;
+	min-width:200px;
+	width: auto; /* change auto value with 200px if you want a bigger menu */
+	display: none;
+	background: #35537F;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	 border-radius:3px;
+	z-index: 9999999; /* if you have YouTube iframes, is good to have a bigger z-index so the video can appear above the video */
+}
+.dropDownMenu > li:hover > ul {
+	display: block;
+}
+.dropDownMenu ul li a {}
+.dropDownMenu ul li a:hover {
+	background: #3553A1;	
+	border-bottom:1px dotted #6b6b6b;
+	}
+/* Level 3 */
+.dropDownMenu > li > ul > li > ul {
+	min-width: 200px; /* change auto value with 200px if you want a bigger menu */
+	text-align: left;
+	display: none;
+	background: #35537F;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	 border-radius:3px; ;
+	z-index: 9999999;
+}
+.dropDownMenu > li > ul > li:hover > ul {
+	display: block;
+}
+.dropDownMenu ul ul li {}
+.dropDownMenu ul ul li a {}
+.dropDownMenu ul ul li a:hover {}
+ 
